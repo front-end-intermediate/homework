@@ -1,7 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { ContactCard } from "./components/contactCard";
-import { Button } from "./components/button";
+import { Buttons } from "./components/button";
 
 const pageStyles = {
   display: "flex",
@@ -17,7 +17,7 @@ const Exercise = () => {
       </div>
       <div>
         <h2>Buttons</h2>
-        <Button />
+        <Buttons />
       </div>
     </div>
   );

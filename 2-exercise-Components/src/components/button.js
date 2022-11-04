@@ -1,9 +1,29 @@
 import React from "react";
 
-export function Button() {
+function Button({ color, borderColor, children }) {
+  return (
+    <button
+      style={{
+        border: "2px solid",
+        color,
+        borderColor,
+        background: "white",
+        borderRadius: 4,
+        padding: 16,
+        margin: 8,
+      }}
+    >
+      {children}
+    </button>
+  );
+}
+
+export function Buttons() {
   return (
     <div>
-      <button
+      <Button color="red" borderColor="red" children="Cancel Me" />
+
+      {/* <button
         style={{
           border: "2px solid",
           color: "red",
@@ -15,8 +35,11 @@ export function Button() {
         }}
       >
         Cancel
-      </button>
-      <button
+      </button> */}
+
+      <Button color="green" borderColor="green" children="Confirm Me" />
+
+      {/* <button
         style={{
           border: "2px solid",
           color: "green",
@@ -28,7 +51,7 @@ export function Button() {
         }}
       >
         Confirm
-      </button>
+      </button> */}
     </div>
   );
 }

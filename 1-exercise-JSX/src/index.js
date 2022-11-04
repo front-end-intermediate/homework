@@ -5,6 +5,8 @@ import { Critter } from "./components/critter";
 
 const pageStyles = {
   display: "flex",
+  flexDirection: "column",
+  gap: "4rem",
 };
 
 const Exercise = () => {
