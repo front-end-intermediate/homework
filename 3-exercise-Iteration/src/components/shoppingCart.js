@@ -38,19 +38,19 @@ const items = [
 ];
 
 export function ShoppingCart() {
+  const inStockItems = items.filter((item) => item.inStock);
+  const outOfStockItems = items.filter((item) => !item.inStock);
   return (
-    <div>
+    <div className="cart">
       <h2>Shopping cart</h2>
-      <CartTable items={items} />
+      <CartTable items={inStockItems} />
+
       <div className="actions">
         <button>Continue checkout</button>
       </div>
 
       <h2>Sold out</h2>
-      {/*
-      TODO: A second CartTable for
-      out-of-stock items
-    */}
+      <CartTable items={outOfStockItems} />
     </div>
   );
 }
