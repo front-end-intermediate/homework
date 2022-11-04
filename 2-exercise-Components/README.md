@@ -10,4 +10,4 @@ The markup displays the contact information for 3 contacts Create a new componen
 
 ## Button
 
-We have two `<button>` elements. Create a Button component, and use it to render both buttons.
+We have two `<button>` elements. Create a Button component, and use it to render both buttons. Use the "children" prop for the text content.
