@@ -39,7 +39,7 @@ const items = [
 
 export function ShoppingCart() {
   return (
-    <div>
+    <div classsName="cart">
       <h2>Shopping cart</h2>
       <CartTable items={items} />
       <div className="actions">
