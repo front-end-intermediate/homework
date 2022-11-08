@@ -16,7 +16,7 @@ The Avatar component is already wired up, but it's being rendered manually, copy
 
 We're building a shopping cart UI. We receive an array of items being held in the cart from the server.
 
-Sometimes, an item in the user's shopping cart will be out of stock. If the item is out of stock, they can't purchase it. And so it should be displayed separately.
+Sometimes, an item in the user's shopping cart will be out of stock. If the item is out of stock, they can't purchase it. And so it should be displayed separately. You should use `Array.filter()` to create in stock and out of stock lists before displaying them.
 
 ![cart](shopping-cart-mockup.png)
 
