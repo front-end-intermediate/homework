@@ -24,11 +24,7 @@ export function Avatars() {
   return (
     <div className="avatar-set">
       {data.map(({ id, alt }) => (
-        <Avatar
-          key={id}
-          src={`https://sandpack-bundler.vercel.app/img/avatars/${id}.png`}
-          alt={alt}
-        />
+        <Avatar key={id} src={`/avatars/${id}.png`} alt={alt} />
       ))}
     </div>
   );
